@@ -7,13 +7,13 @@ function exibirTextoNaTela (tag, texto){
     let campo = document.querySelector(tag);
         campo.innerHTML = texto 
         /* responsiveVoice.speak (texto, 'Brazilian Portuguese Femele', {rate:1.2}); */
-        responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2} );
+        responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.0} );
 } 
 
 function exibirMensagemInicial(){
 
-    exibirTextoNaTela('h1', 'Bem vido a minha plataforma' );
-    exibirTextoNaTela('p', 'Compre tudo em apenas um local');
+    exibirTextoNaTela('h1', 'Acerte meu Número da sorte' );
+    exibirTextoNaTela('p', 'Entre 1 e 10 qual número estou pensando?');
 
 }
 
@@ -40,9 +40,9 @@ function verificarChute() {
         
     else {
         if (chute > numeroSecreto){
-            exibirTextoNaTela ('p','Numero é menor BB.');
+            exibirTextoNaTela ('p','Estou pensando em un Número menor BB.');
         } else {
-            exibirTextoNaTela ('p','Numero é maior Fi de uma mãe');
+            exibirTextoNaTela ('p','Não é esse número ele é maior');
         }
         tentativas++;
         limparCampo ();
